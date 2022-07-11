@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+    <mapper namespace="com.ec.xspx.mapper.SongMapperXCS">
+
+
+    <select id="getSong" resultType="com.ec.xspx.bean.Song">
+        select song_id, song_name, song_singer, user_name from t_song where user_name=#{userName}
+    </select>
+
+</mapper>
